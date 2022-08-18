@@ -19,7 +19,7 @@ groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
-echo "Criando os usuários e atribuindo os grupos determinados..."
+echo "Criando os usuários e atribuindo aos grupos determinados..."
 
 useradd carlos -c "Carlos Villagran" -s /bin/bash -m -p $(openssl passwd -6 102030) -G GRP_ADM
 useradd maria -c "Maria do Bairro" -s /bin/bash -m -p $(openssl passwd -6 102030) -G GRP_ADM
@@ -35,9 +35,9 @@ useradd rogerio -c "Rogério Cenior" -s /bin/bash -m -p $(openssl passwd -6 1020
 
 echo "Definindo os donos e grupos dos diretórios..."
 
-chown root:GRP_ADM /adm/
-chown root:GRP_VEN /ven/
-chown root:GRP_SEC /sec/
+chown root:GRP_ADM /adm
+chown root:GRP_VEN /ven
+chown root:GRP_SEC /sec
 
 echo "Definindo as permissões de usuário nos diretórios..."
 
