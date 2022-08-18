@@ -32,5 +32,8 @@ useradd josefina -c "Josefininha" -s /bin/bash -m -p $(openssl passwd -6 102030)
 useradd amanda -c "Amanda Carvalho" -s /bin/bash -m -p $(openssl passwd -6 102030) -G GRP_SEC
 useradd rogerio -c "Rogério Cenior" -s /bin/bash -m -p $(openssl passwd -6 102030) -G GRP_SEC
 
-echo "Criando as permissões"
+echo "Definindo os donos e grupos dos diretórios"
 
+chown root:GRP_ADM /adm/
+chown root:GRP_VEN /ven/
+chown root:GRP_SEC /sec/
