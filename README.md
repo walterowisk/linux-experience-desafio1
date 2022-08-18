@@ -35,10 +35,9 @@ Clone o projeto
 ```bash
 git clone https://github.com/walterowisk/linux-experience-desafio1.git
 ```
-Entre no diretório onde o projeto foi salvo
+Entre no diretório do projeto
 ```bash 
-# Exemplo
-cd /script
+cd linux-experience-desafio1
 ```
 Execute o script
 ```bash
